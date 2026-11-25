@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+        <meta name="description" content="This is an educational website about geometric abstract artist Josef Albers"/>
+        <meta name="author" content="TD, EG, TH, AW" />
+
+        <link rel="stylesheet" href="styles.css">
+        <title>homage to the square</title>
+
+        <style>
+
+            .grid-container {
+                width: 80%;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container div {
+                height: 150px;
+                width: 150px;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <img src="images/960px-Aa_Albers_Three.svg.webp" height="40px" />
+            <p>a website about geometric abstract painter josef albers</p>
+        </div>
+
+        <div id="navdiv">
+            <ul id="navbar">
+                <li class="nav-page"><a href="/about-albers" class="page">About Albers</a></li>
+                <li class="nav-page"><a href="/noteable-works" class="page">Noteable Works</a></li>
+                <li class="nav-page"><a href="/museum-directory" class="page">Museum Directory</a></li>
+                <li class="nav-page"><a href="/color-theory" class="page">Color Theory</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div class="grid-container">
+                <div id="box1">
+                    <p></p>
+                    <button onclick="getColor(1)">Generate Color</button>
+                </div>
+                <div id="box2">
+                    <p></p>
+                    <button onclick="getColor(2)">Generate Color</button>
+                </div>
+                <div id="box3">
+                    <p></p>
+                    <button onclick="getColor(3)">Generate Color</button>
+                </div>
+                <div id="box4">
+                    <p></p>
+                    <button onclick="getColor(4)">Generate Color</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function getColor(number) {
+                let symbols = "0123456789ABCDEF";
+                let color = "#";
+
+                for (let i = 0; i < 6; i++) {
+                    color += symbols[Math.floor(Math.random() * 16)];
+                }
+                document.getElementById("box" + number).style.backgroundColor = color;
+            }
+        </script>
+
+        <div id="footer">
+            <div class="horizontal-line"></div>
+            <p class="footer-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum
+            </p>
+            <p class="footer-content">
+                <a href="https://letterboxd.com/film/clue/" class="text">Pratt Website</a> /
+                <a href="https://letterboxd.com/film/clue/" class="text">About the Authors </a>
+            </p>
+        </div>
+    </body>
+</html>
