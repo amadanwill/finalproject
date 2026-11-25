@@ -18,6 +18,21 @@ h3 {
     text-decoration: underline;
 }
 
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a.page {
+    text-decoration: none;
+    color: black;
+}
+
+a.title {
+    text-decoration: none;
+    color: black;
+}
+
 ::selection {
     background: #ffec01ff;
 }
@@ -60,11 +75,6 @@ h3 {
     padding: 20px;
 }
 
-a {
-    color: black;
-    font-weight: bold;
-}
-
 li.nav-page {
     display: block;
     float: left;
@@ -73,23 +83,13 @@ li.nav-page {
     text-decoration: none;
 }
 
-a.page {
-    text-decoration: none;
-    color: black;
-}
-
-a.title {
-    text-decoration: none;
-    color: black;
-}
-
-.long-text {
-    width: 70%;
-    float: inline-end;
-}
-
 .footer-content {
     width: 70%;
+}
+
+.page-text {
+    width: 60%;
+    float:inline-end;
 }
 
 .horizontal-line {
@@ -107,9 +107,12 @@ a.title {
     align-content: flex-start;
 }
 
-.regular-image {
-    height: 400px;
-    position: relative;
+.wrap-image {
+    float: left;
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
     top: 0;
     left: 100px;
+    height: 400px;
 }
