@@ -65,7 +65,7 @@ a.page:hover {
     float: left;
     margin: 10px;
     padding: 40px;
-    width: 90%;
+    width: auto;
 }
 
 #footer {
