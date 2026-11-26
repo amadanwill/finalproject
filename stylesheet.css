@@ -20,6 +20,7 @@ h3 {
 a {
     color: black;
     font-weight: bold;
+    cursor: *;
 }
 
 a.page {
@@ -27,9 +28,8 @@ a.page {
     color: black;
 }
 
-a.title {
-    text-decoration: none;
-    color: black;
+a.page:hover {
+    text-decoration: underline;
 }
 
 ::selection {
