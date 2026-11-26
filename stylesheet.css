@@ -78,8 +78,10 @@ li.nav-page {
     display: block;
     float: left;
     padding: 14px 16px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
+    background-color: #ffec01ff;
 }
 
 .footer-content {
