@@ -33,7 +33,7 @@ a.page:hover {
 }
 
 ::selection {
-    background: #ffec01ff;
+    background: #f5c109;
 }
 
 #header {
@@ -81,7 +81,7 @@ li.nav-page {
     margin: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: #ffec01ff;
+    background-color: #f0ebe7;
 }
 
 .footer-content {
@@ -124,6 +124,6 @@ li.nav-page {
 }
       
 .ribbon {
-    background-color: whitesmoke;
+    background-color: #c3d2d7;
     padding: 40px;
 }
