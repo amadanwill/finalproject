@@ -100,12 +100,6 @@ li.nav-page {
     margin-bottom: 20px;
 }
 
-.icon-image {
-    cursor: *;
-    height: 35%;
-    align-content: flex-start;
-}
-
 .wrap-image {
     float: left;
     margin-right: 100px;
@@ -114,4 +108,20 @@ li.nav-page {
     top: 0;
     left: 100px;
     height: 400px;
+
+.wrapper, .ribbon {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+}
+      
+.wrapper {
+    text-align: end;
+    padding: 10px;
+}
+      
+.ribbon {
+    background-color: whitesmoke;
+    padding: 40px;
 }
